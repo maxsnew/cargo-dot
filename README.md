@@ -5,7 +5,13 @@ A tool to graph transitive dependencies for Rust projects using Cargo
 
 Installation
 ------------
-In this project's directory, build the project and then add the binary to your `PATH`.
+
+Easy Install (requires nightly rust for now): 
+```sh
+multirust run nightly cargo install --git https://github.com/maxsnew/cargo-dot.git
+```
+
+From source: In this project's directory, build the project and then add the binary to your `PATH`.
 ```sh
 cargo build
 export PATH=$PATH:`pwd`/target/debug
